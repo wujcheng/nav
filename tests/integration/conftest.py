@@ -7,6 +7,8 @@ import pytest
 
 from nav.buildconf import bindir
 from nav.models.manage import Netbox
+import django
+django.setup()
 
 TESTARGS_PATTERN = re.compile(
     r'^# +-\*-\s*testargs:\s*(?P<args>.*?)\s*(-\*-)?\s*$',
